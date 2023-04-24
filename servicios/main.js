@@ -1,4 +1,5 @@
-import dinamic from "../js/db.js";
+import dinamic from "./../js/db.js"
+
 
 document.addEventListener("DOMContentLoaded",(e)=>{
    cargarCards();
@@ -8,7 +9,6 @@ document.addEventListener("DOMContentLoaded",(e)=>{
 
 
 function cargarMenu(){
-
     const secc1 = document.querySelector("#seccion1");
     secc1.insertAdjacentHTML("beforeend",
     `
@@ -18,10 +18,9 @@ function cargarMenu(){
     dinamic.servicio.seccion1.menus.forEach(el=>{
         const {href ,text } = el;
         men+=`
-        <a class="alink  ss" href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>
+        <a class="alink  ss" href="${href}" target="_self" rel="noopener noreferrer">${text}</a>
         `
     })
-  
 }
 
 function cargarTitle(){

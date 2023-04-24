@@ -51,7 +51,7 @@ export default{
     servicio:{
 
       seccion1:{
-         img:"/images/logoWhite.png",
+         img:"../images/logoWhite.png",
          menus:[
             {
                href:"../index.html",
